@@ -1,0 +1,42 @@
+body {
+	background: #f4f4f4;
+}
+
+.bg-white {
+	background: #FFFFFF;
+}
+
+.content-top {
+	margin-right: 0;
+    margin-left: 0;
+    background-color: #EAEAEA;
+    margin-bottom: -1px;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0px 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 10px 15px;
+}
+
+.content {
+	margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0px 0px 4px 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 20px 30px 40px 30px;
+}
+
+.width25{
+    width: 25%;
+}
+
+.width50{
+    width: 50%;
+}
+
+.paddleft10{
+    padding-left: 10px;
+}
