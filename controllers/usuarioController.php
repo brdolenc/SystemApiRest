@@ -66,7 +66,9 @@
 			$retorno['inputs'] = $model->getInputs($_SESSION['id'], $paramUrl['page']);
 			//retorna os dados dp usuario
 			$retorno['user'] = $model->getSettingsUser($_SESSION['id']);
-			$retorno['user']->porcentagem = (($retorno['count_inputs']*100)/$retorno['user']->max_input);
+			if(isset($retorno['user']->max_input)){
+				$retorno['user']->porcentagem = (($retorno['count_inputs']*100)/$retorno['user']->max_input);
+			}
 
 
 			//calcula a paginação

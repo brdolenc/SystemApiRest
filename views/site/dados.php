@@ -20,11 +20,7 @@
 			<div class="content-top"> Meus dados </div>
 			<div class="content"> 
 
-
-
-
 				<?php
-
 
 					//mostrar erros
 					if(isset($vars['response-msg'])){

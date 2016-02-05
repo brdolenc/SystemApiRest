@@ -19,10 +19,16 @@
 			$user = $this->table("user")->condition("id_user", "=", $idUser)->ready();
 			$this->close();
 			$userSettings = $this->table("user_settings")->condition("id_user", "=", $idUser)->ready();
+			$userSettingsCount = $this->count();
 			$this->close();
 
-			$userSettings[0]->email = $user[0]->email;
-			$userSettings[0]->name = $user[0]->name;
+			if($userSettingsCount>0){
+				$userSettings[0]->email = $user[0]->email;
+				$userSettings[0]->name = $user[0]->name;
+			}else{
+				$userSettings = array();
+				$userSettings[0] = (object)array('email'=>$user[0]->email, 'name'=>$user[0]->name);
+			}
 
 			return $userSettings[0];
 

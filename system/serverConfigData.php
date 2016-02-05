@@ -5,7 +5,7 @@
 	define('DB_NAME', 'api_public');
 	define('DB_USER', 'root');
 	define('DB_PASSWORD', '');
-	define('DEBUGDB', true);
+	define('DEBUGDB', false);
 		 
 	//SETUP
 	define('PROTOCOLO', 'http');
